@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%@page isELIgnored="false" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,10 +12,17 @@
 	rel="stylesheet"
 	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
 	crossorigin="anonymous">
+	
 </head>
 <body>
 	<div class="container mt-5 ">
-	<h2 class="text-center">Registration Form</h2>
+	<h2 class="text-center"> ${desc }</h2>
+	<h2 class="text-center"> ${title }</h2>
+	
+	
+	
+	
+	
 
 		<form action="process" method="post">
 			<div class="mb-3">

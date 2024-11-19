@@ -1,17 +1,43 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
        <%@page isELIgnored="false" %>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap demo</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+	crossorigin="anonymous">
 </head>
 <body>
-<h1>Welcome ${user.name}</h1>
+
+<div class="card text-center">
+  <div class="card-header">
+    Working Spring MVC
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title ${title}</h5>
+    <p class="card-text">${desc}</p>
+   <h1>Welcome ${user.name}</h1>
 <h1>email ${user.email}</h1>
 <h1>password ${user.password}</h1>
+<h1>${msg}</h1>
+
+
+  </div>
+  </div>
+
+
+
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
 </body>
 </html>

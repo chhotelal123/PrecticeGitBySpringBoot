@@ -1,4 +1,4 @@
-package com.controller;
+package springmvc.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +10,14 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HomeController {
+	@RequestMapping("/")
+	public String getIndex(Model model) {
+		
+		return "index";
+	}
+	
+	
+	
 	
 	@RequestMapping("/home")
 	public String getHome(Model model) {
